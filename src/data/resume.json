@@ -1,0 +1,400 @@
+{
+  "picture": {
+    "hidden": false,
+    "url": "http://localhost:3000/uploads/019c6ec9-038d-72d0-800e-6c49dc88a1d1/pictures/1771387014100.webp",
+    "size": 80,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0.5)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "李思源",
+    "headline": "全栈工程师",
+    "email": "1771396362@qq.com",
+    "phone": "13541325053",
+    "location": "四川成都",
+    "website": {
+      "url": "",
+      "label": ""
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>全栈开发工程师，擅长 Vue + Spring 技术栈，具备前后端独立开发能力。在 AI 应用开发领域有实践经验，熟悉 LangChain 框架与大模型集成。注重代码质量与系统可维护性，习惯通过 Docker 实现环境一致性部署。</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "个人主页",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "profile1",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "icon": "globe",
+          "network": "个人博客",
+          "username": "Arohtea - 个人简历",
+          "website": {
+            "url": "https://arohtea-solo.vercel.app/",
+            "label": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "工作经历",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "exp1",
+          "hidden": false,
+          "company": "上海瑞昕科技有限公司",
+          "position": "全栈开发工程师（实习）",
+          "location": "上海",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "exp2",
+          "hidden": false,
+          "company": "成都智和元科技有限公司",
+          "position": "移动开发工程师（实习）",
+          "location": "成都",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "education": {
+      "title": "教育背景",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "019c6ee4-e165-73dc-893c-7551a3495571",
+          "hidden": false,
+          "options": {
+            "showLinkInTitle": false
+          },
+          "school": "成都信息工程大学",
+          "degree": "本科",
+          "area": "软件工程",
+          "grade": "3.25",
+          "location": "",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "项目经历",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "proj4",
+          "hidden": false,
+          "name": "The Dehydrator · 脱水机",
+          "period": "",
+          "website": {
+            "url": "https://github.com/Arohtea/The_Dehydrator",
+            "label": "GitHub"
+          },
+          "description": "<p><strong>技术栈：</strong>Vue 3 | Spring Boot 3.2 | FastAPI + LangChain + GLM-4 | PostgreSQL | Redis | RabbitMQ | Qdrant | Docker</p><ul><li>AI 驱动的学术文档分析系统，实现论据链提取、逻辑漏洞检测与交叉验证</li><li>微服务架构（Vue 3 + Spring Boot + FastAPI），RabbitMQ + SSE 实现异步任务与流式推送</li><li>集成 Qdrant 向量库，基于 LangChain 实现 MAP-REDUCE 分析流水线</li></ul>"
+        },
+        {
+          "id": "proj0",
+          "hidden": false,
+          "name": "桥梁结构健康监测报警系统",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><strong>技术栈：</strong>Vue | Spring Boot | MySQL | UDP/WebService | 企业微信 API | 微信小程序</p><ul><li>主导全栈升级，对接 152 个实时传感器节点，覆盖位移、应力、温湿度等监测指标</li><li>设计 HTTP + UDP + WebService 多协议接入层，完成多源异构数据统一采集与可视化</li><li>集成企业微信 API 实现秒级阈值报警，独立开发配套微信小程序</li></ul>"
+        },
+        {
+          "id": "proj1",
+          "hidden": false,
+          "name": "在线评判平台 ExRank",
+          "period": "",
+          "website": {
+            "url": "https://gitee.com/arohtea/yuan_-oj_-web",
+            "label": "Gitee"
+          },
+          "description": "<p><strong>技术栈：</strong>Vue 3 + GSAP | Spring Cloud | RabbitMQ | Judge0</p><ul><li>独立完成全栈开发，涵盖题库、在线编辑器、评测、竞赛等 8 大模块</li><li>Spring Cloud 微服务架构，Gateway + Nacos + OpenFeign 实现服务治理</li><li>RabbitMQ 异步判题流水线，自建 Judge0 沙箱支持多语言评测</li></ul>"
+        },
+        {
+          "id": "proj2",
+          "hidden": false,
+          "name": "VB6 → Python 遗留系统现代化重构",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><strong>技术栈：</strong>Python | VB6</p><ul><li>承接铁路局信创改造需求，将 VB6 遗留系统重构为 Python 跨平台方案</li><li>完成 5 万+ 行业务逻辑迁移，适配银河麒麟国产操作系统</li></ul>"
+        },
+        {
+          "id": "proj3",
+          "hidden": false,
+          "name": "手机 BLE 调试器",
+          "period": "",
+          "website": {
+            "url": "https://gitee.com/arohtea/bleagent",
+            "label": "Gitee"
+          },
+          "description": "<p><strong>技术栈：</strong>Android | BLE</p><ul><li>为老师项目定制开发 BLE 调试工具，支持扫描、连接、数据收发与协议调试</li></ul>"
+        },
+        {
+          "id": "proj5",
+          "hidden": false,
+          "name": "鸿蒙应用移植",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><strong>技术栈：</strong>HarmonyOS | ArkTS | Migration</p><ul><li>5 款安卓应用成功移植至 HarmonyOS 纯血鸿蒙</li></ul>"
+        },
+        {
+          "id": "proj6",
+          "hidden": false,
+          "name": "微信小程序开发",
+          "period": "",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><strong>技术栈：</strong>WeChat | Mini Program | WXML</p><ul><li>轻量级应用开发，覆盖多场景业务需求</li></ul>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "专业技能",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "skill1",
+          "hidden": false,
+          "icon": "",
+          "name": "前端开发",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Vue 2/3",
+            "Vite",
+            "Tailwind CSS",
+            "GSAP",
+            "Element UI",
+            "HTML/CSS",
+            "微信小程序"
+          ]
+        },
+        {
+          "id": "skill2",
+          "hidden": false,
+          "icon": "",
+          "name": "后端开发",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Spring Cloud",
+            "FastAPI",
+            "Python",
+            "RabbitMQ",
+            "PostgreSQL",
+            "MySQL",
+            "Redis"
+          ]
+        },
+        {
+          "id": "skill5",
+          "hidden": false,
+          "icon": "",
+          "name": "AI & LLM",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "LangChain",
+            "Prompt Engineering",
+            "向量数据库 (Qdrant)"
+          ]
+        },
+        {
+          "id": "skill3",
+          "hidden": false,
+          "icon": "",
+          "name": "移动开发",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Android (Java/Kotlin)",
+            "HarmonyOS (ArkTS)",
+            "BLE",
+            "微信小程序"
+          ]
+        },
+        {
+          "id": "skill4",
+          "hidden": false,
+          "icon": "",
+          "name": "DevOps & 工具",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Docker",
+            "Docker Compose",
+            "Nginx",
+            "Nacos",
+            "Git"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "interests": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "awards": {
+      "title": "荣誉奖项",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "award1",
+          "hidden": false,
+          "title": "蓝桥杯程序设计竞赛 四川省三等奖",
+          "awarder": "蓝桥杯组委会",
+          "date": "2024年",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "certifications": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "publications": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "volunteer": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    },
+    "references": {
+      "title": "",
+      "columns": 1,
+      "hidden": false,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "ditgar",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "projects",
+            "awards"
+          ],
+          "sidebar": [
+            "education",
+            "experience",
+            "skills",
+            "profiles"
+          ]
+        }
+      ]
+    },
+    "css": {
+      "enabled": false,
+      "value": ""
+    },
+    "page": {
+      "gapX": 4,
+      "gapY": 6,
+      "marginX": 14,
+      "marginY": 8,
+      "format": "a4",
+      "locale": "en-US",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "star",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(0, 132, 209, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "400"
+        ],
+        "fontSize": 11.0025,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Serif",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 14.0025,
+        "lineHeight": 1.5
+      }
+    },
+    "notes": ""
+  }
+}
