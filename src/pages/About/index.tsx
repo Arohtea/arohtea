@@ -126,7 +126,7 @@ export default function About() {
                 <span className="w-2 h-5 bg-white ml-1 animate-blink" />
             </div>
 
-            <div ref={paragraphRef} className="space-y-4 md:space-y-8 text-zinc-300 flex-1 min-h-0 overflow-y-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div ref={paragraphRef} className="space-y-4 md:space-y-8 text-zinc-300 flex-1 min-h-0 overflow-hidden">
                 {/* Profile Summary */}
                 <div
                     className="font-serif text-lg md:text-3xl leading-relaxed prose prose-invert prose-p:my-0 lg:prose-p:leading-snug prose-p:text-zinc-300"
@@ -134,30 +134,29 @@ export default function About() {
                 />
 
                 {/* Skills Section */}
-                <div className="pt-7 md:pt-10 border-t border-white/10">
-                    <div className="flex flex-col md:flex-row items-end justify-between mb-7 md:mb-10 px-4">
-                        <h2 className="skills-title text-3xl md:text-5xl lg:text-7xl font-black font-serif uppercase tracking-tighter leading-none text-white">
-                            <span>技术栈</span>
+                <div className="pt-5 md:pt-8 border-t border-white/10">
+                    <div className="flex items-baseline justify-between mb-4 md:mb-6">
+                        <h2 className="skills-title text-2xl md:text-4xl lg:text-5xl font-black font-serif uppercase tracking-tighter leading-none text-white">
+                            技术栈
                         </h2>
-                        <p className="skills-subtitle text-base md:text-xl font-medium max-w-sm text-left md:text-right mt-4 md:mt-0 text-zinc-300">
-                            助力创造的精选工具与技术。
+                        <p className="skills-subtitle text-xs md:text-sm text-zinc-500 font-medium">
+                            助力创造的精选工具与技术
                         </p>
                     </div>
 
-                    {/* Category Lists */}
-                    <div className="skill-list-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-4 md:gap-x-8 md:gap-y-6 mt-4 md:mt-6 px-4">
+                    <div className="skill-list-container space-y-2.5 md:space-y-3">
                         {skills.map((cat, idx) => (
-                            <div key={idx} className="border-t border-white/20 pt-4">
-                                <h3 className="text-sm md:text-lg font-bold uppercase mb-2 md:mb-3 text-white tracking-widest">
+                            <div key={idx} className="flex items-baseline gap-3 md:gap-5">
+                                <span className="skill-list-item text-[11px] md:text-xs font-bold uppercase text-white/70 tracking-widest whitespace-nowrap shrink-0 w-16 md:w-28">
                                     {cat.name}
-                                </h3>
-                                <ul className="space-y-0.5 md:space-y-1.5">
+                                </span>
+                                <div className="flex flex-wrap gap-1.5 md:gap-2">
                                     {cat.keywords.map((item) => (
-                                        <li key={item} className="skill-list-item text-xs md:text-base font-medium text-zinc-300 hover:text-white transition-colors">
+                                        <span key={item} className="skill-list-item text-[11px] md:text-sm text-zinc-400 border border-white/10 rounded px-1.5 py-0.5 md:px-2.5 md:py-0.5 hover:text-white hover:border-white/30 transition-colors">
                                             {item}
-                                        </li>
+                                        </span>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
                         ))}
                     </div>
