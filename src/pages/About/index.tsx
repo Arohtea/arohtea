@@ -134,8 +134,8 @@ export default function About() {
                 />
 
                 {/* Skills Section */}
-                <div className="pt-3 md:pt-6 border-t border-white/10">
-                    <div className="flex flex-col md:flex-row items-end justify-between mb-3 md:mb-6 px-4">
+                <div className="pt-7 md:pt-10 border-t border-white/10">
+                    <div className="flex flex-col md:flex-row items-end justify-between mb-7 md:mb-10 px-4">
                         <h2 className="skills-title text-3xl md:text-5xl lg:text-7xl font-black font-serif uppercase tracking-tighter leading-none text-white">
                             <span>技术栈</span>
                         </h2>
