@@ -25,14 +25,16 @@ export default function DynamicBackground() {
             speedX: number
             speedY: number
             baseSize: number
+            moving: boolean
 
             constructor() {
                 this.x = Math.random() * canvas!.width
                 this.y = Math.random() * canvas!.height
-                this.baseSize = Math.random() * 1.5 + 0.5
+                this.baseSize = Math.random() * 2 + 0.8
                 this.size = this.baseSize
-                this.speedX = (Math.random() - 0.5) * 0.3
-                this.speedY = (Math.random() - 0.5) * 0.3
+                this.moving = Math.random() < 0.2
+                this.speedX = this.moving ? (Math.random() - 0.5) * 0.3 : 0
+                this.speedY = this.moving ? (Math.random() - 0.5) * 0.3 : 0
             }
 
             update() {
@@ -48,7 +50,7 @@ export default function DynamicBackground() {
 
             draw() {
                 if (!ctx) return
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.4)'
                 ctx.beginPath()
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
                 ctx.fill()
@@ -58,7 +60,7 @@ export default function DynamicBackground() {
         const initParticles = () => {
             particles = []
             const isMobile = canvas.width < 768
-            const divisor = isMobile ? 10000 : 6000
+            const divisor = isMobile ? 15000 : 9000
             const numberOfParticles = Math.floor((canvas.width * canvas.height) / divisor)
             for (let i = 0; i < numberOfParticles; i++) {
                 particles.push(new Particle())
@@ -75,8 +77,8 @@ export default function DynamicBackground() {
 
                     if (distance < 120) {
                         const opacity = 1 - (distance / 120)
-                        ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.05})`
-                        ctx.lineWidth = 0.5
+                        ctx.strokeStyle = `rgba(255, 255, 255, ${opacity * 0.25})`
+                        ctx.lineWidth = 0.8
                         ctx.beginPath()
                         ctx.moveTo(particles[i].x, particles[i].y)
                         ctx.lineTo(particles[j].x, particles[j].y)
@@ -115,7 +117,7 @@ export default function DynamicBackground() {
         <canvas
             ref={canvasRef}
             className="fixed inset-0 pointer-events-none z-0"
-            style={{ opacity: 0.8 }}
+            style={{ opacity: 1 }}
         />
     )
 }

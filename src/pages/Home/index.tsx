@@ -273,19 +273,19 @@ export default function Home() {
                         </div>
 
                         {/* Right: Contact Details */}
-                        <div className="space-y-6 md:pt-4">
-                            <div className="group">
-                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Location</span>
-                                <span className="text-lg md:text-xl text-white font-light">{profile.location}</span>
+                        <div className="space-y-8 md:pt-4">
+                            <div className="border-l-2 border-white/15 pl-5">
+                                <span className="text-xs font-mono tracking-widest text-zinc-500 uppercase block mb-2">Location</span>
+                                <span className="text-xl md:text-2xl text-white font-light">{profile.location}</span>
                             </div>
-                            <div className="group">
-                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Email</span>
-                                <a href="mailto:13541325053@163.com" className="text-lg md:text-xl text-white font-light hover:text-zinc-400 transition-colors block">13541325053@163.com</a>
-                                <a href="mailto:1771396362@qq.com" className="text-lg md:text-xl text-white font-light hover:text-zinc-400 transition-colors block">1771396362@qq.com</a>
+                            <div className="border-l-2 border-white/15 pl-5">
+                                <span className="text-xs font-mono tracking-widest text-zinc-500 uppercase block mb-2">Email</span>
+                                <a href="mailto:13541325053@163.com" className="text-xl md:text-2xl text-white font-light hover:text-zinc-400 transition-colors block leading-snug">13541325053@163.com</a>
+                                <a href="mailto:1771396362@qq.com" className="text-xl md:text-2xl text-white font-light hover:text-zinc-400 transition-colors block leading-snug mt-1">1771396362@qq.com</a>
                             </div>
-                            <div className="group">
-                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Phone</span>
-                                <span className="text-lg md:text-xl text-white font-light">{profile.phone}</span>
+                            <div className="border-l-2 border-white/15 pl-5">
+                                <span className="text-xs font-mono tracking-widest text-zinc-500 uppercase block mb-2">Phone</span>
+                                <span className="text-xl md:text-2xl text-white font-light">{profile.phone}</span>
                             </div>
                         </div>
                     </div>
