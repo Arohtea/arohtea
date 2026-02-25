@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useLayoutEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Observer } from 'gsap/all'
-import { profile, education } from '../../data'
+import { profile } from '../../data'
 
 import About from '../About'
 import Projects from '../Projects'
@@ -258,45 +258,34 @@ export default function Home() {
             <div ref={el => { if (el) slidesRef.current[3] = el }} className="slide absolute inset-0 w-full h-full bg-[#0a0a0a] flex flex-col justify-between px-6 md:px-12 text-zinc-300 z-[1]">
                 <div className="max-w-5xl mx-auto w-full flex-1 flex flex-col justify-center">
 
-                    {/* Hero heading */}
-                    <h2 className="text-4xl md:text-8xl font-serif font-black tracking-tighter text-white mb-10 md:mb-16 leading-none">
-                        Let's Connect<span className="text-zinc-600">.</span>
-                    </h2>
-
-                    {/* Two-column: Education + Contact */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 mb-10 md:mb-16">
-
-                        {/* Education */}
-                        {education.length > 0 && (
-                            <div>
-                                <h3 className="text-xs font-mono tracking-widest text-zinc-500 uppercase mb-6">Education</h3>
-                                {education.map(edu => (
-                                    <div key={edu.id} className="border-l-2 border-white/10 pl-5">
-                                        <h4 className="text-lg font-serif text-white">{edu.school}</h4>
-                                        <p className="text-sm text-zinc-400 mt-1">{edu.area} / {edu.degree}</p>
-                                        <span className="text-xs font-mono text-zinc-600 mt-2 block">GPA {edu.grade}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-
-                        {/* Contact */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start">
+                        {/* Left: Heading + Copy */}
                         <div>
-                            <h3 className="text-xs font-mono tracking-widest text-zinc-500 uppercase mb-6">Contact</h3>
-                            <div className="space-y-4">
-                                <div className="border-l-2 border-white/10 pl-5">
-                                    <span className="text-xs font-mono text-zinc-600 block mb-1">Location</span>
-                                    <span className="text-white">{profile.location}</span>
-                                </div>
-                                <div className="border-l-2 border-white/10 pl-5">
-                                    <span className="text-xs font-mono text-zinc-600 block mb-1">Email</span>
-                                    <a href="mailto:13541325053@163.com" className="text-white hover:text-zinc-400 transition-colors block">13541325053@163.com</a>
-                                    <a href="mailto:1771396362@qq.com" className="text-white hover:text-zinc-400 transition-colors block">1771396362@qq.com</a>
-                                </div>
-                                <div className="border-l-2 border-white/10 pl-5">
-                                    <span className="text-xs font-mono text-zinc-600 block mb-1">Phone</span>
-                                    <span className="text-white">{profile.phone}</span>
-                                </div>
+                            <h2 className="text-4xl md:text-7xl font-serif font-black tracking-tighter text-white leading-none">
+                                Let's<br />Connect<span className="text-zinc-600">.</span>
+                            </h2>
+                            <p className="text-sm md:text-base font-light text-zinc-500 leading-relaxed mt-6 md:mt-8 max-w-md">
+                                如果你有一个想法正在寻找落地，或是一个项目需要技术上的助力，欢迎随时联系我。
+                            </p>
+                            <p className="text-xs md:text-sm text-zinc-600 font-serif italic mt-3">
+                                好的作品，往往始于一次简单的对话。
+                            </p>
+                        </div>
+
+                        {/* Right: Contact Details */}
+                        <div className="space-y-6 md:pt-4">
+                            <div className="group">
+                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Location</span>
+                                <span className="text-lg md:text-xl text-white font-light">{profile.location}</span>
+                            </div>
+                            <div className="group">
+                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Email</span>
+                                <a href="mailto:13541325053@163.com" className="text-lg md:text-xl text-white font-light hover:text-zinc-400 transition-colors block">13541325053@163.com</a>
+                                <a href="mailto:1771396362@qq.com" className="text-lg md:text-xl text-white font-light hover:text-zinc-400 transition-colors block">1771396362@qq.com</a>
+                            </div>
+                            <div className="group">
+                                <span className="text-[10px] font-mono tracking-widest text-zinc-600 uppercase block mb-1.5">Phone</span>
+                                <span className="text-lg md:text-xl text-white font-light">{profile.phone}</span>
                             </div>
                         </div>
                     </div>
