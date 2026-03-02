@@ -1,6 +1,6 @@
 ---
 title: "Android BLE 开发：从扫描到数据收发全部流程"
-excerpt: "蓝牙低功耗（BLE）开发充满了权限陷阱和异步回调。这篇文章带你理清整个通信流程，少走弯路。"
+excerpt: "蓝牙低功耗（BLE）开发充满了权限陷阱和异步回调。这篇文章带你理清整个通信流程，少走弯路。 "
 date: "2026-01-20"
 category: "Tech"
 id: "ble-android-development"
